@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGo-ha-LNi">
+                                <rect key="frame" x="69.5" y="308" width="236" height="40"/>
+                                <color key="backgroundColor" red="0.72837883049999996" green="1" blue="0.81156933149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Keyframe Animation"/>
+                                <connections>
+                                    <action selector="keyframeAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3B-cK-vjv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BF-0x-BQe">
+                                <rect key="frame" x="69" y="243" width="236" height="40"/>
+                                <color key="backgroundColor" red="0.72837883049999996" green="1" blue="0.81156933149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CtJ-B7-MtS"/>
+                                    <constraint firstAttribute="width" constant="236" id="sln-si-fmT"/>
+                                </constraints>
+                                <state key="normal" title="Transition Animation"/>
+                                <connections>
+                                    <action selector="transitionAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eu2-jn-3Nc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR3-D5-pOl">
+                                <rect key="frame" x="69.5" y="373" width="236" height="40"/>
+                                <color key="backgroundColor" red="0.72837883045041574" green="1" blue="0.81156933151214738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Base Animation"/>
+                                <connections>
+                                    <action selector="baseAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxm-Hc-2OY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wellcome.png" translatesAutoresizingMaskIntoConstraints="NO" id="d9c-FI-yDs">
+                                <rect key="frame" x="13" y="30" width="349" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="349" id="Urc-PY-Ifn"/>
+                                    <constraint firstAttribute="height" constant="128" id="er5-s4-utm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Core Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihe-a2-CaE">
+                                <rect key="frame" x="13" y="158" width="349" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="urL-Pi-2aL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GR3-D5-pOl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3S3-19-5vE"/>
+                            <constraint firstItem="LGo-ha-LNi" firstAttribute="width" secondItem="2BF-0x-BQe" secondAttribute="width" id="DbR-LW-EuO"/>
+                            <constraint firstItem="GR3-D5-pOl" firstAttribute="width" secondItem="LGo-ha-LNi" secondAttribute="width" id="DeY-BN-XbQ"/>
+                            <constraint firstItem="LGo-ha-LNi" firstAttribute="top" secondItem="2BF-0x-BQe" secondAttribute="bottom" constant="25" id="FOg-wh-PtM"/>
+                            <constraint firstItem="d9c-FI-yDs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J3W-rq-j6d"/>
+                            <constraint firstItem="2BF-0x-BQe" firstAttribute="top" secondItem="Ihe-a2-CaE" secondAttribute="bottom" constant="50" id="NCD-kp-4Ui"/>
+                            <constraint firstItem="Ihe-a2-CaE" firstAttribute="top" secondItem="d9c-FI-yDs" secondAttribute="bottom" id="NkS-XB-PgV"/>
+                            <constraint firstItem="GR3-D5-pOl" firstAttribute="top" secondItem="LGo-ha-LNi" secondAttribute="bottom" constant="25" id="UVm-rV-zvt"/>
+                            <constraint firstItem="2BF-0x-BQe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yfk-ca-YSc"/>
+                            <constraint firstItem="LGo-ha-LNi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="afC-DO-fVl"/>
+                            <constraint firstItem="Ihe-a2-CaE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="czY-ly-GAe"/>
+                            <constraint firstItem="GR3-D5-pOl" firstAttribute="height" secondItem="LGo-ha-LNi" secondAttribute="height" id="djU-Jh-ayG"/>
+                            <constraint firstItem="d9c-FI-yDs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="k1t-p7-NTe"/>
+                            <constraint firstItem="LGo-ha-LNi" firstAttribute="height" secondItem="2BF-0x-BQe" secondAttribute="height" id="lvv-gV-1Bq"/>
+                            <constraint firstItem="Ihe-a2-CaE" firstAttribute="width" secondItem="d9c-FI-yDs" secondAttribute="width" id="zFn-Xz-4D8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wellcome.png" width="351" height="221"/>
+    </resources>
+</document>
